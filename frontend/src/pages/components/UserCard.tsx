@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardActionArea, CardActions, CardContent, CardMedia, Typography, Button, Stack } from '@mui/material';
-import { ApiResponse } from '../api/user';
+import { ApiResponse } from '../../api/user';
 
 interface UserCardProps {
     userData: ApiResponse; // Consider replacing 'any' with the actual user type

@@ -4,10 +4,10 @@ import { ApiResponse } from '../../api/user';
 import { fetchUserById } from '../../api/user';
 import { CircularProgress } from '@mui/material';
 
-import { UserCard } from '../../components/UserCard';
+import { UserCard } from '../components/UserCard';
 import { Stack } from '@mui/system';
-import Navbar from '../../components/Navbar';
-import Page from '../../components/Page';
+import Navbar from '../components/Navbar';
+import Page from '../components/Page';
 
 const Home = () => {
   const [userId, setUserId] = React.useState(1);

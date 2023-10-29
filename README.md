@@ -1,5 +1,6 @@
 # Full-Stack Engineer: Line-Up Coding Exercise
 
+### Tech used: React, React-Query, Cypress, Material UI, Docker, FastAPI, Pytest
 
 #### This setup was made on Linux. For Windows instead of using the 'sudo' command make sure you run the terminal as an admin. The Mac setup should use the same commands.
 
