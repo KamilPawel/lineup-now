@@ -124,3 +124,10 @@ yarn cypress run open
 ```
 
 You should see all the tests passing.
+
+You can also use the Cypress client to inspect the tests by running:
+
+```bash
+yarn run cypress open
+```
+Select the web browser to use and then click the test you want to run.
