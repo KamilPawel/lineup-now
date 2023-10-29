@@ -2,7 +2,6 @@ export interface ApiResponse {
   data: UserData;
   support: SupportInfo;
 }
-
 // Information about the user
 export interface UserData {
   id: number;
