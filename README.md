@@ -1,14 +1,20 @@
 # Full-Stack Engineer: Line-Up Coding Exercise
 
 
-#### This setup was made on linux but the commands should be similar on windows and mac
+#### This setup was made on Linux. For Windows instead of using the 'sudo' command make sure you run the terminal as an admin. The Mac setup should use the same commands.
 
 ## Frontend
 
 ### Installation
 Please make sure you have ```yarn``` installed. Here is the documentation on how to get it setup <a href='https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable'>here</a>.
 
-Once you have yarn setup install all the dependencies by running:
+
+Once you have yarn setup go to the frontend folder by running:
+```bash
+cd frontend
+```
+
+and install all the dependencies by running:
 
 ```bash
 yarn install
@@ -28,7 +34,11 @@ yarn start
 
 Please make sure you have docker installed. Here is the documentation on how to get it setup <a href="https://docs.docker.com/engine/install/">here</a>.
 
-Once you have docker installed, build the docker image by running:
+Once you have docker installed, go to the backend directory by running:
+```bash
+cd backend
+```
+and  build the docker image by running:
 
 ```bash
 sudo docker build -t lineup .
@@ -63,7 +73,7 @@ To run the virtual environment run:
 pipenv shell
 ```
 
-You can now run the REST API by running:
+You can now run the REST API by running inside the pipenv virtual environment :
 ```bash
 pipenv run start
 ```
@@ -90,13 +100,27 @@ You can also run the pipfile script by running:
 ```bash
 pipenv run test
 ```
+You should see all the tests passing.
 ### Testing the client
 
 The project was setup using cypress hence you need to make sure that both the frontend and backend are running as shown in instructions above.
+
+To summarise make sure you have 2 terminals running one for the frontend:
+```bash
+yarn start
+```
+and the backend either inside the Docker container:
+```bash
+sudo docker run -p 8000:8000 docker.io/library/lineup
+```
+or by natively running FastAPI inside the pipenv virtual environment:
+```bash
+pipenv run start
+```
 
 Once you have both frontend and backend running, please run
 ```bash
 yarn cypress run open
 ```
 
-Then use the user interface to select a web browser you want to use to test, and click on the following cypress tests.
+You should see all the tests passing.
